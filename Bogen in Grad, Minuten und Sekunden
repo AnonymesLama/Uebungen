@@ -1,0 +1,10 @@
+#Bogen in Gradmaß
+x=float(input('Radiant: '))
+from math import pi
+deg = (180 * x) / pi
+grad = int(deg)
+bogenmin = x*10800/pi
+bogensek = x*648000/pi
+print(f'{deg}°')
+print(f'{bogenmin} Bogenminuten')
+print(f'{bogensek} Bogensekunden')
