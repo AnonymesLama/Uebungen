@@ -1,6 +1,6 @@
 #Bogen in Gradmaß
-x=float(input('Radiant: '))
-from math import pi
+x=float(input('Radiant: ')) #die umzurechnende Radiantenzahl wird eingegeben 
+from math import pi #Pi wird importiert
 deg = (180 * x) / pi
 grad = int(deg)
 bogenmin = x*10800/pi
