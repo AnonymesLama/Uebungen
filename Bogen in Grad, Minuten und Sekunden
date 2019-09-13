@@ -1,10 +1,10 @@
 #Bogen in Gradmaß
 x=float(input('Radiant: ')) #die umzurechnende Radiantenzahl wird eingegeben 
 from math import pi #Pi wird importiert
-deg = (180 * x) / pi
-grad = int(deg)
-bogenmin = x*10800/pi
-bogensek = x*648000/pi
+deg = (180 * x) / pi #die eingegebene Zahl (Radiant) wird mit 180/Pi multipliziert, um den Winkel rauszubekommen
+grad = int(deg) #die Gradzahl wird als Integer umgeformt -> die Nachkommastellen werden entfernt
+bogenmin = x*10800/pi #die Radiantenzahl wird in Bogenminuten umgerechnet
+bogensek = x*648000/pi #die Radiantenzahl wird in Bogensekunden umgerechnet
 print(f'{deg}°')
 print(f'{bogenmin} Bogenminuten')
 print(f'{bogensek} Bogensekunden')
